@@ -255,6 +255,12 @@ extern "C" JNIEXPORT jobject JNICALL Java_com_huawei_hiaidemo_utils_ModelManager
         names.push_back(string(modelName));
         modelPaths.push_back(string(modelPath));
     }
+
+    aipps.push_back(false);
+    names.push_back(string("model_cspnext_fix_backbone"));
+    modelPaths.push_back(string("/data/user/0/com.huawei.hiaidemo/app_models/model_cspnext_fix_backbone.om"));
+
+
     // load
     IF_BOOL_EXEC(!g_clientSync, g_clientSync = LoadModelSync(names, modelPaths, aipps); IF_BOOL_EXEC(
         g_clientSync == nullptr, LOGE("[HIAI_DEMO_SYNC] g_clientSync loadModel is nullptr."); return nullptr));
@@ -269,6 +275,7 @@ extern "C" JNIEXPORT jobject JNICALL Java_com_huawei_hiaidemo_utils_ModelManager
 
 int runProcess(JNIEnv* env, jobject bufList, jmethodID listGet, int vecIndex, int listLength, const char* modelName)
 {
+    LOGI("[HIAI_DEMO_SYNC] sync runProcess listLength=%d, vecIndex=%d, modelName=%s\n", listLength, vecIndex, modelName);
     for (int i = 0; i < listLength; i++) {
         jbyteArray buf_ = (jbyteArray)(env->CallObjectMethod(bufList, listGet, i));
         jbyte* dataBuff = nullptr;
