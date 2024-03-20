@@ -1,0 +1,9 @@
+[armeabi-v7a] Compile++ thumb: hiaijni <= classify_sync_jni.cpp
+[armeabi-v7a] Compile++ thumb: hiaijni <= classify_async_jni.cpp
+[armeabi-v7a] Compile++ thumb: hiaijni <= buildmodel.cpp
+[armeabi-v7a] Prebuilt       : libhiai_ir.so <= /Users/kom/work/workspace_ai/workspace_huawei/HiAI-Foundation/app/src/main/jni/../../../libs/armeabi-v7a/
+[armeabi-v7a] Prebuilt       : libhiai.so <= /Users/kom/work/workspace_ai/workspace_huawei/HiAI-Foundation/app/src/main/jni/../../../libs/armeabi-v7a/
+[armeabi-v7a] Prebuilt       : libhcl.so <= /Users/kom/work/workspace_ai/workspace_huawei/HiAI-Foundation/app/src/main/jni/../../../libs/armeabi-v7a/
+[armeabi-v7a] Prebuilt       : libhiai_ir_build.so <= /Users/kom/work/workspace_ai/workspace_huawei/HiAI-Foundation/app/src/main/jni/../../../libs/armeabi-v7a/
+[armeabi-v7a] Prebuilt       : libc++_shared.so <= <NDK>/sources/cxx-stl/llvm-libc++/libs/armeabi-v7a/
+[armeabi-v7a] SharedLibrary  : libhiaijni.so

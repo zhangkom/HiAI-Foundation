@@ -1,0 +1,2 @@
+[arm64-v8a] Compile++      : hiaijni <= classify_sync_jni.cpp
+[arm64-v8a] SharedLibrary  : libhiaijni.so

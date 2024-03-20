@@ -1,0 +1,1 @@
+/Users/kom/work/workspace_ai/workspace_huawei/HiAI-Foundation/app/build/intermediates/ndkBuild/debug/obj/local/armeabi-v7a
